@@ -1,7 +1,7 @@
 
 import './App.css';
 import HomePage from './pages/HomePage';
-import { BrowserRouter, Route , Routes} from 'react-router-dom';
+import { BrowserRouter, HashRouter, Route , Routes} from 'react-router-dom';
 
 import React from 'react';
 import AboutUs from './pages/AboutUs';
@@ -11,7 +11,7 @@ import Gallery from './pages/Gallery';
 function App() {
   return (
     <div className="App">
-      <BrowserRouter  >
+      <HashRouter  >
     
     <Routes>
       <Route exact path="/" element={<HomePage />} />
@@ -24,7 +24,7 @@ function App() {
       
      
     </Routes>
-  </BrowserRouter>
+  </HashRouter>
     </div>
   );
 }
